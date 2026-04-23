@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat UI Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Chat UI Demo</h1>
+    <button id="theme-btn" onclick="toggleTheme()">Темна тема</button>
+  </header>
+  <main>
+    <div id="chat-box">
+      <div id="messages">
+        <div class="msg bot">Привіт!</div>
+        <div class="msg user">Привіт! Я хочу знати більше про цей чат.</div>
+        <div class="msg bot">Я чат-бот. Зберігаю інформацію.</div>
+      </div>
+      <div id="input-area">
+        <input type="text" id="user-input" placeholder="Напишіть повідомлення...">
+        <button onclick="sendMessage()">Надіслати</button>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <p>2026 Chat UI Demo</p>
+  </footer>
+  <script src="chat.js"></script>
+</body>
+</html>
